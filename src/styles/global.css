@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    font-family: var(--font-roboto);
+    background-color: #121214;
+    color: #e1e1e6;
+  }
+
+  html {
+    font-size: 75%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+  }
+
+  body {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  @media screen and (min-width: 580px) {
+    html {
+      font-size: 81.25%;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 100%;
+    }
+  }
+}
+
+@layer utilities {
+  .maxWidth {
+    @apply max-w-[calc(100vw-(100vw-1180px)/2)];
+  }
+
+  .maxWidth {
+    max-width: calc(100vw - ((100vw - 1180px) / 2));
+  }
+
+  .backgroundColor {
+    background: linear-gradient(180deg, #1ea483 0%, #7465d4 100%);
+  }
+
+  .backgroundfooter {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .animation {
+    transform: translateY(110%);
+    opacity: 0;
+    transition: "all 0.2s ease-in-out";
+  }
+
+  .animatioHover {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

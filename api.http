@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/checkout
+
+Content-Type: application/json
+
+{
+    "priceId": "price_1N42434343"
+}
