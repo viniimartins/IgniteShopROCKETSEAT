@@ -26,7 +26,7 @@ export const getProduct = cache(async (productId: string) => {
           style: "currency",
           currency: "BRL",
         }).format(price.unit_amount / 100)
-      : "Price not available";
+      : "Price  not available";
 
   return {
     id: response.id,
